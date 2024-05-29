@@ -11,6 +11,12 @@ const App = () => {
     if (input === 'C') return setValue('0');
 
     if (input === 'AC') return setValue('');
+    if (input === 'D') {
+      if (value.length > 1) {
+        return setValue(value.slice(0, -1));
+      }
+      return setValue('0');
+    }
 
     if (input === '-') {
       if (value.includes('-')) {
@@ -43,6 +49,7 @@ const App = () => {
     }
 
     if (input === '=') {
+      if (value === '0' || value === '00') return setValue('0');
       try {
         setValue(eval(value));
       } catch (error) {
