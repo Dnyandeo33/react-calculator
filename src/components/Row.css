@@ -1,0 +1,9 @@
+.row {
+  .AC {
+    width: 8rem;
+    background-color: #ee3636;
+  }
+  .C {
+    background-color: rgb(215, 215, 80);
+  }
+}

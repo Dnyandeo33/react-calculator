@@ -1,0 +1,15 @@
+.output {
+  padding: 0.8rem;
+  background-color: #70c4ee;
+  display: flex;
+  height: 4rem;
+  width: 15.9rem;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  overflow: hidden;
+
+  .curr {
+    font-size: 2rem;
+  }
+}
